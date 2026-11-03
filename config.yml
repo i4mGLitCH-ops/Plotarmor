@@ -1,0 +1,25 @@
+# ---------------- Plot armor (only for players given /plotarmor) ----------------
+
+# Extra reach in blocks. Applies to hitting players/mobs and to breaking/placing blocks.
+extra-reach: 1.0
+
+# Invisible slow regeneration (Regeneration I, no icon, no particles).
+# It switches on at start-hearts or below, and switches off again at stop-hearts.
+# Set stop-hearts equal to start-hearts for "only while at 3 hearts or less".
+regen:
+  start-hearts: 3
+  stop-hearts: 5
+
+# Hunger drain multiplier. 1.0 = normal, 0.5 = hunger goes down twice as slowly.
+# This also applies to the hunger that the Lunge enchantment costs.
+hunger:
+  exhaustion-multiplier: 0.5
+
+# ---------------- Spears (ON for everybody, no command needed) ----------------
+spears:
+  enabled: true
+  # Ticks a charge attack has to wait before it can hit (vanilla is higher, 20 ticks = 1 second).
+  # 0 = it hits as soon as you start charging, you don't wait for the animation.
+  charge-delay-ticks: 0
+  # Damage multiplier for every spear hit. It scales the whole hit, so Sharpness is included.
+  damage-multiplier: 1.5

@@ -1,0 +1,15 @@
+name: PlotArmor
+version: 1.0.0
+main: dev.eventserver.plotarmor.PlotArmor
+api-version: "1.21"
+description: Plot armor for chosen players, plus faster and stronger spears for everyone.
+commands:
+  plotarmor:
+    description: Give or remove plot armor
+    usage: /plotarmor <players> [on|off] | list | reload
+    aliases: [pa]
+    permission: plotarmor.admin
+permissions:
+  plotarmor.admin:
+    description: Use /plotarmor
+    default: op
